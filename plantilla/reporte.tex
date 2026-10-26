@@ -1,0 +1,103 @@
+\documentclass[12pt,letterpaper]{article}
+
+% ---------- Paquetes ----------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{caption}
+\usepackage{fancyhdr}
+\usepackage[hidelinks]{hyperref}
+
+\graphicspath{{imagenes/}}
+
+% ---------- Datos de la práctica ----------
+\newcommand{\numpractica}{XX}
+\newcommand{\titulopractica}{Título de la práctica}
+\newcommand{\fechaentrega}{\today}
+\newcommand{\autor}{Domínguez Palacios Jesús Alejandro}
+\newcommand{\profesor}{Nombre del profesor}
+\newcommand{\grupo}{XX}
+
+% ---------- Estilo de código ----------
+\lstset{
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{blue},
+  commentstyle=\color{gray},
+  stringstyle=\color{red!60!black},
+  numbers=left, numberstyle=\tiny, stepnumber=1,
+  frame=single, breaklines=true, tabsize=4,
+  showstringspaces=false
+}
+
+% ---------- Encabezado ----------
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{OAC -- Laboratorio}
+\rhead{Práctica \numpractica}
+\cfoot{\thepage}
+
+\begin{document}
+
+% ---------- Portada ----------
+\begin{titlepage}
+  \centering
+  {\Large \textbf{Universidad Nacional Autónoma de México}\par}
+  \vspace{0.3cm}
+  {\large Facultad de Ingeniería\par}
+  \vspace{1.5cm}
+  {\large Laboratorio de Organización y Arquitectura de Computadoras\par}
+  \vspace{2cm}
+  {\LARGE \textbf{Práctica \numpractica}\par}
+  \vspace{0.5cm}
+  {\Large \titulopractica\par}
+  \vfill
+  \begin{tabular}{rl}
+    \textbf{Alumno:}   & \autor \\
+    \textbf{Profesor:} & \profesor \\
+    \textbf{Grupo:}    & \grupo \\
+    \textbf{Fecha:}    & \fechaentrega \\
+  \end{tabular}
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+\section{Objetivo}
+Escribe aquí el objetivo de la práctica.
+
+\section{Introducción}
+Marco teórico breve.
+
+\section{Desarrollo}
+Describe el procedimiento.
+
+% Ejemplo de imagen:
+% \begin{figure}[H]
+%   \centering
+%   \includegraphics[width=0.7\textwidth]{diagrama.png}
+%   \caption{Descripción de la figura.}
+% \end{figure}
+
+% Ejemplo de código:
+% \begin{lstlisting}[language=VHDL]
+% -- código aquí
+% \end{lstlisting}
+
+\section{Resultados}
+Muestra y analiza los resultados.
+
+\section{Conclusiones}
+Conclusiones de la práctica.
+
+\begin{thebibliography}{9}
+  \bibitem{ref1} Autor. \textit{Título}. Editorial, año.
+\end{thebibliography}
+
+\end{document}

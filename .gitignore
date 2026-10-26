@@ -1,0 +1,35 @@
+# --- Auxiliares de LaTeX ---
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+*.nav
+*.snm
+*.vrb
+*.xdv
+*.dvi
+*-blx.bib
+*.lol
+_minted*/
+*.listing
+
+# --- Editores / sistema ---
+.vscode/
+*.swp
+*~
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Si NO quieres subir los PDF compilados, descomenta:
+# *.pdf
